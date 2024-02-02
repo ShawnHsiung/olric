@@ -2,7 +2,7 @@
 # docker build -f docker/Dockerfile -t olricio/olric-dev .
 # docker push olricio/olric-dev:latest
 
-FROM golang:latest
+FROM golang:1.22rc2-bookworm
 
 WORKDIR /src/
 COPY go.sum /src/
